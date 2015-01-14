@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		83896EE61A6695EF008F9395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83896EE51A6695EF008F9395 /* AppDelegate.swift */; };
 		83896EE91A6695EF008F9395 /* MyQueue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83896EE71A6695EF008F9395 /* MyQueue.xcdatamodeld */; };
-		83896EEB1A6695EF008F9395 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83896EEA1A6695EF008F9395 /* ViewController.swift */; };
 		83896EEE1A6695EF008F9395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83896EEC1A6695EF008F9395 /* Main.storyboard */; };
 		83896EF01A6695EF008F9395 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83896EEF1A6695EF008F9395 /* Images.xcassets */; };
 		83896EF31A6695EF008F9395 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83896EF11A6695EF008F9395 /* LaunchScreen.xib */; };
 		83896EFF1A6695F0008F9395 /* MyQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83896EFE1A6695F0008F9395 /* MyQueueTests.swift */; };
+		83896F0B1A669671008F9395 /* MyQueueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83896F0A1A669671008F9395 /* MyQueueTableViewController.swift */; };
+		83896F0D1A6696C8008F9395 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83896F0C1A6696C8008F9395 /* SettingsViewController.swift */; };
+		83896F0F1A669B83008F9395 /* AddQueueEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83896F0E1A669B83008F9395 /* AddQueueEntryCell.swift */; };
+		83896F111A66AB2B008F9395 /* QueueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83896F101A66AB2B008F9395 /* QueueItem.swift */; };
+		83896F131A66B2FA008F9395 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83896F121A66B2FA008F9395 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +35,17 @@
 		83896EE41A6695EF008F9395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83896EE51A6695EF008F9395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83896EE81A6695EF008F9395 /* MyQueue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyQueue.xcdatamodel; sourceTree = "<group>"; };
-		83896EEA1A6695EF008F9395 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83896EED1A6695EF008F9395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83896EEF1A6695EF008F9395 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		83896EF21A6695EF008F9395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		83896EF81A6695F0008F9395 /* MyQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83896EFD1A6695F0008F9395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83896EFE1A6695F0008F9395 /* MyQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQueueTests.swift; sourceTree = "<group>"; };
+		83896F0A1A669671008F9395 /* MyQueueTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyQueueTableViewController.swift; sourceTree = "<group>"; };
+		83896F0C1A6696C8008F9395 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		83896F0E1A669B83008F9395 /* AddQueueEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddQueueEntryCell.swift; sourceTree = "<group>"; };
+		83896F101A66AB2B008F9395 /* QueueItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueItem.swift; sourceTree = "<group>"; };
+		83896F121A66B2FA008F9395 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83896F131A66B2FA008F9395 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +70,7 @@
 		83896ED71A6695EF008F9395 = {
 			isa = PBXGroup;
 			children = (
+				83896F121A66B2FA008F9395 /* MessageUI.framework */,
 				83896EE21A6695EF008F9395 /* MyQueue */,
 				83896EFB1A6695F0008F9395 /* MyQueueTests */,
 				83896EE11A6695EF008F9395 /* Products */,
@@ -80,12 +90,15 @@
 			isa = PBXGroup;
 			children = (
 				83896EE51A6695EF008F9395 /* AppDelegate.swift */,
-				83896EEA1A6695EF008F9395 /* ViewController.swift */,
 				83896EEC1A6695EF008F9395 /* Main.storyboard */,
 				83896EEF1A6695EF008F9395 /* Images.xcassets */,
 				83896EF11A6695EF008F9395 /* LaunchScreen.xib */,
 				83896EE71A6695EF008F9395 /* MyQueue.xcdatamodeld */,
 				83896EE31A6695EF008F9395 /* Supporting Files */,
+				83896F0A1A669671008F9395 /* MyQueueTableViewController.swift */,
+				83896F0C1A6696C8008F9395 /* SettingsViewController.swift */,
+				83896F0E1A669B83008F9395 /* AddQueueEntryCell.swift */,
+				83896F101A66AB2B008F9395 /* QueueItem.swift */,
 			);
 			path = MyQueue;
 			sourceTree = "<group>";
@@ -215,9 +228,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83896EEB1A6695EF008F9395 /* ViewController.swift in Sources */,
 				83896EE61A6695EF008F9395 /* AppDelegate.swift in Sources */,
+				83896F0B1A669671008F9395 /* MyQueueTableViewController.swift in Sources */,
+				83896F0D1A6696C8008F9395 /* SettingsViewController.swift in Sources */,
 				83896EE91A6695EF008F9395 /* MyQueue.xcdatamodeld in Sources */,
+				83896F111A66AB2B008F9395 /* QueueItem.swift in Sources */,
+				83896F0F1A669B83008F9395 /* AddQueueEntryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
