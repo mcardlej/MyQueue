@@ -10,4 +10,12 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var messageText: UITextView!
+    @IBOutlet weak var saveButtonPressed: UIButton!
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
+    }
 }
