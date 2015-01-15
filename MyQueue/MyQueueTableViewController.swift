@@ -59,10 +59,14 @@ class MyQueueTableViewController: UITableViewController, MFMessageComposeViewCon
             
         }else {
             var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("queueItemCell") as UITableViewCell
+        
+                cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "queueItemCell")
+
             
             if (self.items.count > 0) {
                 cell.textLabel?.text = self.items[indexPath.row].name;
                 cell.detailTextLabel?.text = self.items[indexPath.row].phoneNumber;
+        
                 
                 let swipeLeft: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "swipedRightAction:")
                 swipeLeft.direction = UISwipeGestureRecognizerDirection.Right
