@@ -59,6 +59,12 @@ class MyQueueTableViewController: UITableViewController, MFMessageComposeViewCon
             if (self.items.count > 0) {
                 cell.textLabel?.text = self.items[indexPath.row].name;
                 cell.detailTextLabel?.text = self.items[indexPath.row].phoneNumber;
+                
+                let swipeLeft: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "swipedRightAction:")
+                swipeLeft.direction = UISwipeGestureRecognizerDirection.Right
+                
+                cell.addGestureRecognizer(swipeLeft)
+                
             }
             else
             {
@@ -111,7 +117,6 @@ class MyQueueTableViewController: UITableViewController, MFMessageComposeViewCon
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if (indexPath.section > 0){
             self.selectedIndex = indexPath.row
-            self.launchMessageComposeViewController()
         }
     }
     
@@ -137,5 +142,16 @@ class MyQueueTableViewController: UITableViewController, MFMessageComposeViewCon
         if result.value == MessageComposeResultSent.value {
             self.items.removeAtIndex(self.selectedIndex)
         }
+    }
+    
+    
+    func swipedRightAction(gesture: UIGestureRecognizer)
+    {
+
+        let cell = gesture.view as UITableViewCell?
+        let indexPath = self.tableView.indexPathForCell(cell!) as NSIndexPath?
+        let row = indexPath?.row
+        self.selectedIndex =  row!
+        self.launchMessageComposeViewController()
     }
 }
