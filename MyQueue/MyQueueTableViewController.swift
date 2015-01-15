@@ -47,6 +47,10 @@ class MyQueueTableViewController: UITableViewController, MFMessageComposeViewCon
             
             var cell:AddQueueEntryCell = self.tableView.dequeueReusableCellWithIdentifier("addQueueCell") as AddQueueEntryCell
             cell.delegate = self
+            if (self.items.count < 1){
+                cell.nameField.becomeFirstResponder()
+                cell.setupTextFieldDelegates()  
+            }
             return cell;
             
         }else {

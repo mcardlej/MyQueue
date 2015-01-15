@@ -97,14 +97,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lym-wq-EJT" id="Y0Q-fk-WHT">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Mobile Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KnK-q3-22x">
-                                            <rect key="frame" x="8" y="59" width="304" height="43"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="43" id="kk8-Gx-J8B"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="phonePad"/>
-                                        </textField>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HF-d7-c5r">
                                             <rect key="frame" x="8" y="110" width="304" height="43"/>
                                             <color key="backgroundColor" red="0.1050621389" green="0.75235172189999999" blue="0.38798685690000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -119,13 +111,21 @@
                                                 <action selector="addNewEntryPressed:" destination="Lym-wq-EJT" eventType="touchUpInside" id="1b7-bV-EVw"/>
                                             </connections>
                                         </button>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lQq-Y6-wEp">
+                                        <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lQq-Y6-wEp">
                                             <rect key="frame" x="8" y="8" width="304" height="43"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="43" id="aWH-Hp-HOE"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Mobile Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KnK-q3-22x">
+                                            <rect key="frame" x="8" y="59" width="304" height="43"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="43" id="kk8-Gx-J8B"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="phonePad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                         </textField>
                                     </subviews>
                                     <constraints>
