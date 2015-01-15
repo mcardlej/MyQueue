@@ -16,9 +16,47 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXR-wn-Tci">
+                                <rect key="frame" x="107" y="72" width="106" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="&lt;Name&gt;, your order is now ready for pickup!" translatesAutoresizingMaskIntoConstraints="NO" id="Zc8-XL-XHq">
+                                <rect key="frame" x="16" y="101" width="288" height="126"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oE-c2-cgp">
+                                <rect key="frame" x="16" y="235" width="288" height="43"/>
+                                <color key="backgroundColor" red="0.1050621389" green="0.75235172189999999" blue="0.38798685690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zc8-XL-XHq" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="AEg-Cs-Bwf"/>
+                            <constraint firstItem="Zc8-XL-XHq" firstAttribute="centerX" secondItem="LXR-wn-Tci" secondAttribute="centerX" id="B8J-mG-9Jd"/>
+                            <constraint firstItem="LXR-wn-Tci" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="EY7-vc-N0E"/>
+                            <constraint firstItem="Zc8-XL-XHq" firstAttribute="top" secondItem="LXR-wn-Tci" secondAttribute="bottom" constant="8" symbolic="YES" id="SFv-5z-VV0"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="6oE-c2-cgp" secondAttribute="bottom" constant="290" id="ShF-jg-ay8"/>
+                            <constraint firstItem="Zc8-XL-XHq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Vca-gi-Ylh"/>
+                            <constraint firstItem="6oE-c2-cgp" firstAttribute="trailing" secondItem="Zc8-XL-XHq" secondAttribute="trailing" id="WJD-Qa-Gd3"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Zc8-XL-XHq" secondAttribute="bottom" constant="341" id="dGr-eC-8td"/>
+                            <constraint firstItem="6oE-c2-cgp" firstAttribute="leading" secondItem="Zc8-XL-XHq" secondAttribute="leading" id="kR9-7T-L94"/>
+                            <constraint firstItem="6oE-c2-cgp" firstAttribute="top" secondItem="Zc8-XL-XHq" secondAttribute="bottom" constant="8" symbolic="YES" id="mXT-2S-2ze"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="kZD-He-tF8"/>
+                    <connections>
+                        <outlet property="messageText" destination="Zc8-XL-XHq" id="b1V-Ew-SAM"/>
+                        <outlet property="saveButtonPressed" destination="6oE-c2-cgp" id="zmv-hC-tqa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,7 +103,7 @@
                                                 <constraint firstAttribute="height" constant="43" id="kk8-Gx-J8B"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="phonePad"/>
                                         </textField>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HF-d7-c5r">
                                             <rect key="frame" x="8" y="110" width="304" height="43"/>
@@ -87,7 +125,7 @@
                                                 <constraint firstAttribute="height" constant="43" id="aWH-Hp-HOE"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                         </textField>
                                     </subviews>
                                     <constraints>
