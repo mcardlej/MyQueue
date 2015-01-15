@@ -62,7 +62,7 @@
             </objects>
             <point key="canvasLocation" x="1197" y="466"/>
         </scene>
-        <!--My Queue-->
+        <!--MyQueue-->
         <scene sceneID="Qag-sG-4PM">
             <objects>
                 <tableViewController id="zgG-0e-Eg3" customClass="MyQueueTableViewController" customModule="MyQueue" customModuleProvider="target" sceneMemberID="viewController">
@@ -152,7 +152,7 @@
                             <outlet property="delegate" destination="zgG-0e-Eg3" id="ld7-C6-SPO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Queue" id="MfD-wf-WXu">
+                    <navigationItem key="navigationItem" title="MyQueue" id="MfD-wf-WXu">
                         <barButtonItem key="backBarButtonItem" title="Back" id="5Mp-1f-q9a"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="vbd-E1-9kf">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
