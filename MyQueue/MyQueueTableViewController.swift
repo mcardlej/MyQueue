@@ -20,6 +20,10 @@ class MyQueueTableViewController: UITableViewController, MFMessageComposeViewCon
         super.init(coder: aDecoder)
     }
     
+    override func viewDidLoad() {
+        self.tableView.estimatedRowHeight = 100.0;
+    }
+    
     //Number of Sections
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         //2 Sections
