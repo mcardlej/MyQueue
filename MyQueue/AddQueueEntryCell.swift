@@ -12,6 +12,7 @@ class AddQueueEntryCell: UITableViewCell, UITextFieldDelegate {
     var delegate:AddQueueEntryCellDelegate! = nil
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var phoneNumberField: UITextField!
+    
     @IBAction func addNewEntryPressed(sender: AnyObject) {
         delegate!.didAddNewQueueItem(nameField.text, phone: phoneNumberField.text)
         nameField.text = "";

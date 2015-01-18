@@ -14,6 +14,19 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var saveButtonPressed: UIButton!
     
     override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)        
+        super.viewWillAppear(animated)
+        let message: Message = Message.getLatestMessage() as Message
+        messageText.text = message.valueForKey("text") as String
+    }
+    
+    
+    @IBAction func saveButtonPressed(sender: AnyObject) {
+        if (Message.createNewMessage(messageText.text)){
+            return
+        }
+        else{
+            var alert = UIAlertController(title: "Oh Snap!", message: "An error occurred saving this message!", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Dang it!", style: UIAlertActionStyle.Default, handler: nil))
+        }
     }
 }

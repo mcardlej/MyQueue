@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		837D0F471A6BE2D200FD1305 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D0F461A6BE2D200FD1305 /* Message.swift */; };
 		83896EE61A6695EF008F9395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83896EE51A6695EF008F9395 /* AppDelegate.swift */; };
 		83896EE91A6695EF008F9395 /* MyQueue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83896EE71A6695EF008F9395 /* MyQueue.xcdatamodeld */; };
 		83896EEE1A6695EF008F9395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83896EEC1A6695EF008F9395 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		837D0F461A6BE2D200FD1305 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		83896EE01A6695EF008F9395 /* MyQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83896EE41A6695EF008F9395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83896EE51A6695EF008F9395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				83896EEF1A6695EF008F9395 /* images.xcassets */,
 				83896EF11A6695EF008F9395 /* LaunchScreen.xib */,
 				83896EE71A6695EF008F9395 /* MyQueue.xcdatamodeld */,
+				837D0F461A6BE2D200FD1305 /* Message.swift */,
 				83896EE31A6695EF008F9395 /* Supporting Files */,
 				83896F0A1A669671008F9395 /* MyQueueTableViewController.swift */,
 				83896F0C1A6696C8008F9395 /* SettingsViewController.swift */,
@@ -234,6 +237,7 @@
 				83896EE91A6695EF008F9395 /* MyQueue.xcdatamodeld in Sources */,
 				83896F111A66AB2B008F9395 /* QueueItem.swift in Sources */,
 				83896F0F1A669B83008F9395 /* AddQueueEntryCell.swift in Sources */,
+				837D0F471A6BE2D200FD1305 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

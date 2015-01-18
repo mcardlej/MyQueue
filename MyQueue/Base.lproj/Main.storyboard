@@ -31,11 +31,14 @@
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oE-c2-cgp">
                                 <rect key="frame" x="16" y="235" width="288" height="43"/>
-                                <color key="backgroundColor" red="0.1050621389" green="0.75235172189999999" blue="0.38798685690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.32549019610000002" green="0.59999999999999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zxp-BR-RfC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -97,20 +100,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lym-wq-EJT" id="Y0Q-fk-WHT">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HF-d7-c5r">
-                                            <rect key="frame" x="8" y="110" width="304" height="43"/>
-                                            <color key="backgroundColor" red="0.1050621389" green="0.75235172189999999" blue="0.38798685690000001" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="43" id="HWk-Qq-xp4"/>
-                                            </constraints>
-                                            <state key="normal" title="Add New Entry">
-                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="addNewEntryPressed:" destination="Lym-wq-EJT" eventType="touchUpInside" id="1b7-bV-EVw"/>
-                                            </connections>
-                                        </button>
                                         <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lQq-Y6-wEp">
                                             <rect key="frame" x="8" y="8" width="304" height="43"/>
                                             <constraints>
@@ -127,6 +116,20 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="phonePad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                         </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HF-d7-c5r">
+                                            <rect key="frame" x="8" y="110" width="304" height="43"/>
+                                            <color key="backgroundColor" red="0.32549019607843138" green="0.59999999999999998" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="43" id="HWk-Qq-xp4"/>
+                                            </constraints>
+                                            <state key="normal" title="Add New Entry">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="addNewEntryPressed:" destination="Lym-wq-EJT" eventType="touchUpInside" id="1b7-bV-EVw"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="9HF-d7-c5r" firstAttribute="leading" secondItem="KnK-q3-22x" secondAttribute="leading" id="bRE-fO-hu2"/>

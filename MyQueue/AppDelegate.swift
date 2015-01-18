@@ -22,6 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Set the Status Bar to be Light
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
 
+        if (!Message.initialMessageCheck()){
+            if( Message.createNewMessage("<NAME>, your order is ready for pickup!")){
+                println("Init message created")
+            }
+            else {
+                println("Error creating Init messgae")
+            }
+        }
+        
         return true
     }
 

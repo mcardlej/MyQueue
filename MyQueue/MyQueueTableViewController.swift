@@ -179,7 +179,17 @@ class MyQueueTableViewController: UITableViewController, MFMessageComposeViewCon
             let messageVC = MFMessageComposeViewController()
             messageVC.messageComposeDelegate = self
             messageVC.recipients = [self.items[selectedIndex].phoneNumber]
-            messageVC.body = self.items[selectedIndex].name + ", your order is ready for pickup!"
+            
+            let message: Message = Message.getLatestMessage() as Message
+            let text: String =  message.valueForKey("text") as String
+            let messageText = text.stringByReplacingOccurrencesOfString("<NAME>", withString: self.items[selectedIndex].name , options: NSStringCompareOptions.LiteralSearch, range: nil)
+            
+            messageVC.body = messageText
+            
+            if (!self.isProVersion()){
+                messageVC.body = messageText + " - SENT USING MyQueue, get it in the App Store Today!"
+            }
+            
             self.presentViewController(messageVC, animated: true, completion: nil)
         }
         else {
@@ -273,5 +283,11 @@ class MyQueueTableViewController: UITableViewController, MFMessageComposeViewCon
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
             self.tableView.reloadData()
         })
+    }
+    
+//MARK: - Pro Version Checking
+    func isProVersion()->Bool {
+        //@TODO - Implment this.
+        return false
     }
 }
