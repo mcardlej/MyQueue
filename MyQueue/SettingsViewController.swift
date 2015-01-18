@@ -14,8 +14,6 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var saveButtonPressed: UIButton!
     
     override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        
+        super.viewWillAppear(animated)        
     }
 }
