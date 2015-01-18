@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Set the Status Bar to be Light
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
-        
+
         return true
     }
 

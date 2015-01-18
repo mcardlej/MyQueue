@@ -10,7 +10,7 @@
 		83896EE61A6695EF008F9395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83896EE51A6695EF008F9395 /* AppDelegate.swift */; };
 		83896EE91A6695EF008F9395 /* MyQueue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83896EE71A6695EF008F9395 /* MyQueue.xcdatamodeld */; };
 		83896EEE1A6695EF008F9395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83896EEC1A6695EF008F9395 /* Main.storyboard */; };
-		83896EF01A6695EF008F9395 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83896EEF1A6695EF008F9395 /* Images.xcassets */; };
+		83896EF01A6695EF008F9395 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83896EEF1A6695EF008F9395 /* images.xcassets */; };
 		83896EF31A6695EF008F9395 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83896EF11A6695EF008F9395 /* LaunchScreen.xib */; };
 		83896EFF1A6695F0008F9395 /* MyQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83896EFE1A6695F0008F9395 /* MyQueueTests.swift */; };
 		83896F0B1A669671008F9395 /* MyQueueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83896F0A1A669671008F9395 /* MyQueueTableViewController.swift */; };
@@ -36,7 +36,7 @@
 		83896EE51A6695EF008F9395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83896EE81A6695EF008F9395 /* MyQueue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyQueue.xcdatamodel; sourceTree = "<group>"; };
 		83896EED1A6695EF008F9395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		83896EEF1A6695EF008F9395 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		83896EEF1A6695EF008F9395 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		83896EF21A6695EF008F9395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		83896EF81A6695F0008F9395 /* MyQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83896EFD1A6695F0008F9395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 			children = (
 				83896EE51A6695EF008F9395 /* AppDelegate.swift */,
 				83896EEC1A6695EF008F9395 /* Main.storyboard */,
-				83896EEF1A6695EF008F9395 /* Images.xcassets */,
+				83896EEF1A6695EF008F9395 /* images.xcassets */,
 				83896EF11A6695EF008F9395 /* LaunchScreen.xib */,
 				83896EE71A6695EF008F9395 /* MyQueue.xcdatamodeld */,
 				83896EE31A6695EF008F9395 /* Supporting Files */,
@@ -210,7 +210,7 @@
 			files = (
 				83896EEE1A6695EF008F9395 /* Main.storyboard in Resources */,
 				83896EF31A6695EF008F9395 /* LaunchScreen.xib in Resources */,
-				83896EF01A6695EF008F9395 /* Images.xcassets in Resources */,
+				83896EF01A6695EF008F9395 /* images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MyQueue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -366,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MyQueue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +427,7 @@
 				83896F041A6695F0008F9395 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83896F051A6695F0008F9395 /* Build configuration list for PBXNativeTarget "MyQueueTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +436,7 @@
 				83896F071A6695F0008F9395 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

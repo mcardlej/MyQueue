@@ -40,6 +40,10 @@ class MyQueueTableViewController: UITableViewController, MFMessageComposeViewCon
         
         //Not sure why, but this apparently makes the rows stop squishing up...
         self.tableView.estimatedRowHeight = 100.0;
+        
+        // TODO Change Navigation Background, more work needed. --JMC
+        //self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        
     }
     
     //MARK: - UITableViewController Protocol Implementation
