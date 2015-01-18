@@ -22,6 +22,10 @@ class MyQueueTableViewController: UITableViewController, MFMessageComposeViewCon
     
     override func viewDidLoad() {
         self.tableView.estimatedRowHeight = 100.0;
+        
+        // TODO Change Navigation Background, more work needed. --JMC
+        //self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        
     }
     
     //Number of Sections
